@@ -45,6 +45,23 @@ describe("getPlaylistWithTracks", async function(){
     })
 })
 
+describe("getUserID", async function () {
+    it("Should return current user's Spotify ID", async function () {
+        try {
+            var userID = await getUserID('37i9dQZF1DX84kJlLdo9vT').userID
+            var userName = await getUserID('37i9dQZF1DX84kJlLdo9vT').userName
+            assert.typeOf(userID, 'object');
+            assert.typeOf(userName, 'object');
+            console.log(userID)
+            console.log(userName)
+            
+        }
+        catch(err){
+            console.log("getUserID error")
+        }
+    })
+})
+
 
 describe("getTaste", async function(){
     it("Should return an object of taste",  async function(){
