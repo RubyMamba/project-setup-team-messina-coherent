@@ -57,7 +57,7 @@ describe("getUserID", async function () {
             
         }
         catch(err){
-            console.log("getUserID error")
+            console.log("")
         }
     })
 })
